@@ -1,0 +1,2 @@
+# QuizBot
+Bot for minigames

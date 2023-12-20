@@ -1,0 +1,57 @@
+
+
+async def state1(message: types.Message, state: FSMContext):
+    async with state.proxy() as data:
+        data['type'] = message.text
+        print(data['type'])
+    await FSMAdmin3.next()
+    types1 = await database_conn.sql_select_command10()
+    for sel in types1:
+        huy = data['type']
+        checker[huy] = data['type']
+        read = await database_conn.sql_select_command3(huy)
+        for ret in read:
+            for x in ret:
+                x = str(ret[0])
+            await FSMAdmin3.price.set()
+            await FSMAdmin3.next()
+        if huy == 'Отмена':
+            await client.cancel_handler(state)
+            await message.reply('Отменено')
+            return state1
+        else:
+            func = await database_conn.sql_read4(message)
+            for qut in func:
+                if qut != '' and qut is not None:
+
+
+
+
+
+
+
+
+@dp.message_handler(content_types=ContentType.SUCCESSFUL_PAYMENT)
+async def successful_payment(msg: types.Message):
+    await bot.send_message(msg.chat.id, 'nice')
+        '''if True:
+            schedule.add_job(apsched.timer_message_cron, trigger='interval', seconds=9,
+                             kwargs={'message': msg})
+            print('запустилось')
+            schedule.start()
+            await asyncio.sleep(10)
+            await bot.unban_chat_member(chat_id='-1001781599983', user_id='5870143609', only_if_banned=True)
+            sex = data['type']
+            read = await database_conn.sql_select_command7(sex, msg)
+            for ret in read:
+                print(ret)
+                await FSMAdmin3.next()
+                await FSMAdmin3.solve.set()
+
+                await FSMAdmin3.input.set()
+                await solution
+            else:
+                print('wrong')
+                await msg.answer(text='Тип игры введен неверно, выберите один из типов в списке')
+                await state.finish()
+                return buy'''

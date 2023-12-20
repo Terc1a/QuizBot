@@ -1,0 +1,18 @@
+# tep = ' '.join(map(str(tip), end = ''))
+            #tep = tip.slpit(",")
+            #tup = ",".join(tip)
+            #sl = tup.find(message.text)
+
+            for tup in types1:
+                print(tup)
+                tap = ','.join(tup)
+                string = ''
+                # Добавляем к строке элемент списка
+                string += str(tap)
+                # Добавляем к строке разделитель — в данном случае пробел
+                string += ' '
+                print(string)
+            #print(tep, end='')
+            #print(tup, 'tup')
+           #print(sl, 'sl')
+            #print(list(tip), 'tip')
